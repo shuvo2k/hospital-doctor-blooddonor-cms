@@ -1,0 +1,188 @@
+
+/*
+===========================================Slider=====================================
+*/
+
+.carousel-inner img{
+  height: 400px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+/*
+===========================================Doctor_List&_schedule=====================================
+*/
+
+.doctor_headding{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: green;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.doctor_detail {
+  background-color: #fff;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+.doctor_img img{
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid gray;
+
+
+}
+
+.doctor_part {
+    background-color: #fff;
+
+}
+.doctor_headding{
+    text-align: center;
+    font-size: 40px;
+}
+
+.doctor_list_1{
+
+}
+
+}
+.doctor_list_2{
+
+  /*
+  ===========================================changing_Area=====================================
+  */
+
+}
+.changing{
+  background-color: #fff;
+  padding-top: 30px;
+
+}
+.changing_header{
+
+}
+.advantages_list{
+
+}
+
+.widget{
+  text-align: center;
+  color: gray;
+}
+
+.widget:hover{
+  color: green;
+}
+
+
+/*
+===========================================Services_areac=====================================
+*/
+
+.service_area{
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+.services h2{
+  padding-top: 30px;
+  padding-bottom: 30px
+  font-size: 40px;
+  color: green;
+}
+
+.services p{
+  padding-bottom: 30px
+}
+
+
+.card_services h5{
+  color: green;
+  font-size: 25px;
+  text-align: center;
+
+}
+.card_services p{
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+
+}
+.card_services p:hover{
+  color:green;
+  font-size: 16px;
+}
+
+
+.card_services,div.service-card{
+margin: 0 auto;
+}
+
+/*
+===========================================vcontact_us=====================================
+*/
+.contact1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact2{
+  color: green;
+  font-size:40px;
+}
+.contact3{
+  padding-bottom: 5px;
+}
+.contact4{
+  margin-top: 10px;
+}
+/*
+===========================================Blog_areac=====================================
+*/
+
+.our_blog{
+  padding-bottom: 30px;
+}
+div.container.our_blog{
+
+}
+
+
+.newest_hotel .row, .card-deck{
+  margin: 0 auto;
+}
+/*
+===========================================Newest_hotel=====================================
+*/
+
+.newest_hotel{
+  padding-bottom: 30px;
+}
+
+
+/*
+===========================================gallery=====================================
+*/
+.gallery h2{
+  font-size: 40px;
+  color: green;
+}

@@ -1,0 +1,186 @@
+body {
+    background-color: #ffffff;
+}
+
+/* ---------------------------------------------------
+    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+----------------------------------------------------- */
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.nav-style{
+    font-size:30px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #4450e4 ;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #4450e4;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+
+
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.profile{
+  text-align: center;
+  padding-top: 40px;
+}
+
+.snippet{
+  padding-top: 20px;
+}
+.blood-post-create-area{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blood-post-create-area .card{
+  margin-bottom: 20px;
+
+}
+
+
+.bg{
+  background: black;
+  font-size: 30px;
+}
+
+div.card-body {
+    padding: 0rem;
+}
+.post_create{
+  font-size:16px;
+  background: #f9f9f9;
+  border: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+}
+.post_create img{
+  height: 40px;
+  width: 40px;
+  border: 2px solid #dddfe2;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+div.card a {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+}
+.add_option {
+  background: #fff;
+  padding:0px 5px;
+  margin-bottom:15px;
+}
+
+.blood-content{
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+}
+
+
+
+/*messagess
+
+*/
+
+
+.messages .col-sm-6{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card-header {
+    padding: 5px 5px;
+    margin-bottom: 0;
+}
+.messages p{
+  margin-bottom: 0px;
+}
+.messages hr{
+  margin: 0px;
+}
+
+form#registrationForm {
+  border: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+}
+
+
+/*botton
+
+*/
+
+.btn-info {
+    color: #fff;
+    background-color: #4450e4;
+    border-color: #17a2b8;
+}

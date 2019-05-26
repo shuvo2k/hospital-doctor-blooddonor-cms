@@ -1,0 +1,48 @@
+
+/*
+===========================================Login form=====================================
+*/
+body {
+ width: 100%;
+ height: 100vh;
+}
+
+.form-area{
+  padding: 60px 20px;
+
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*.form-container{*/
+/*  background: #fff;*/
+/*  border-radius: 10px;*/
+/*  padding:10px 15px;*/
+/*  border: 1px solid #DAE1E7;*/
+/*}*/
+
+.form-container h4{
+  padding-left: 15px;
+  font-size:25px;
+  color:green;
+}
+
+.form-container p{
+  padding-left: 15px;
+  font-size:25px;
+}
+
+.signup-img img{
+  height:800px;
+  width:100%;
+}
+
+
+.account ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}

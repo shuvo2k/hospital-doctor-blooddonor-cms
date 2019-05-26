@@ -1,0 +1,42 @@
+
+.search{
+  background: #fff;
+  margin-bottom: 10px;
+}
+.search form{
+  margin-bottom: 20px;
+}
+
+/*
+===========================================Donner=====================================
+*/
+
+.blood_donner_area{
+  background: #fff;
+}
+.card-deck a.donner {
+  text-decoration: none;
+}
+.card-deck{
+  padding-top: 20px;
+
+}
+
+.card-header img{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.card-header{
+  padding: 0;
+  background: gray;
+}
+
+.card-deck .card{
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

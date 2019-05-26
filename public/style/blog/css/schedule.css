@@ -1,0 +1,73 @@
+
+/*
+===========================================main contant=====================================
+*/
+.search{
+  background:#fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.main_contant_area{
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 16px;
+}
+h3{
+  font-size: 16px;
+}
+
+.main_contant_area a{
+  color:#000;
+  text-decoration: none;
+  padding-top: 5px;
+
+}
+.schedule_area{
+  padding:25px 5px;
+  margin-bottom:15px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+
+/*
+===========================================icon=================================================
+*/
+.icon_hospital{
+  margin: -15px 0px -15px 16px;
+}
+.icon i {
+  color: none;
+  padding-left: 0px;
+  margin-right: 2px;
+  font-size: 16px;
+
+}
+
+.icon_hospital i {
+  color: none;
+  padding-left: 0px;
+  margin-right: 3px;
+  font-size: 26px;
+}
+.bottom-icon{
+  display:flex;
+  justify-content: space-between;
+  margin: -15px 0px
+}
+
+/*
+================================================navber=====================================
+*/
+
+.form-inline {
+  padding-top: 10px;
+  color: 	#003b6f;
+}
