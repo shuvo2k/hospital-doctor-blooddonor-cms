@@ -47,8 +47,8 @@ class Detail extends Model
     }
 
     //general information
-    public function generalinfo(){
-        return $this->hasOne('App\GeneralInformation');
+    public function generalinfos(){
+        return $this->hasOne('App\GeneralInfo');
     }
 
     //nearest hotel
@@ -57,8 +57,8 @@ class Detail extends Model
     }
 
     //terms and condition
-    public function terms(){
-        return $this->hasOne('App\TermsCondition');
+    public function term_conditions(){
+        return $this->hasOne('App\TermConditon');
     }
 
     //maps and location

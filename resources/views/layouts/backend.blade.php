@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+@stack('css')
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.11/dist/summernote-bs4.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="{!! asset('style/home.css') !!}">
 
 
@@ -76,7 +79,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="all-doctor-schedule-list.html">All Schedule List</a>
+                                    <a href="{!! route('dashboard.schedule.list') !!}">All Schedule List</a>
                                 </li>
                             </ul>
                         </div>
@@ -96,7 +99,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="all-blog-post-list.html">All Blog Post</a>
+                                    <a href="{!! route('dashboard.blogpost.list') !!}">All Blog Post</a>
                                 </li>
                             </ul>
                         </div>
@@ -115,9 +118,7 @@
 
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="edit-org-description.html">Edit Description</a>
-                                </li>
+
                             </ul>
                         </div>
                     </li>
@@ -136,7 +137,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-delete-gallery-img.html">Edit or Delete Image</a>
+                                    <a href="{!! route('dashboard.gallery.list') !!}">Edit or Delete Image</a>
                                 </li>
                             </ul>
                         </div>
@@ -156,7 +157,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-delete-patients-comments.html">Edit or Delete comments</a>
+                                    <a href="{!! route('dashboard.patient.comments.list') !!}">Edit or Delete comments</a>
                                 </li>
                             </ul>
                         </div>
@@ -176,7 +177,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-delete-feature.html">Edit or Delete Feature</a>
+                                    <a href="{!! route('dashboard.changing.feature.list') !!}">Edit or Delete Feature</a>
                                 </li>
                             </ul>
                         </div>
@@ -197,7 +198,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-delete-service.html">Edit or Delete Services</a>
+                                    <a href="{!! route('dashboard.services.list') !!}">Edit or Delete Services</a>
                                 </li>
                             </ul>
                         </div>
@@ -219,7 +220,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-information.html">Edit or Delete info</a>
+                                    <a href="{!! route('dashboard.generalinfo.list') !!}">Edit or Delete info</a>
                                 </li>
                             </ul>
                         </div>
@@ -241,7 +242,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-delete-nearest-hotel.html">Edit or delete Hotel</a>
+                                    <a href="{!! route('dashboard.nearest.hotel.list') !!}">Edit or delete Hotel</a>
                                 </li>
                             </ul>
                         </div>
@@ -261,7 +262,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="edit-trams.html">Edit or delete Trams & conditions</a>
+                                    <a href="{!! route('dashboard.terms.list') !!}">Edit or delete Trams & conditions</a>
                                 </li>
                             </ul>
                         </div>
@@ -314,7 +315,7 @@
                 <i class="fa fa-cog"></i>
 
             </a>
-            <a href="../blog/index.com">
+            <a href="{{route('signout')}}">
                 <i class="fa fa-power-off"></i>
             </a>
         </div>
@@ -343,7 +344,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bs4-summernote@0.8.10/dist/summernote-bs4.min.js"></script>
 <script type="text/javascript">
     jQuery(function ($) {
 
@@ -381,7 +382,7 @@
 
 </script>
 
-
+@stack('js')
 </body>
 
 </html>

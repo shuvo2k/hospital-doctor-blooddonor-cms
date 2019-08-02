@@ -14,6 +14,20 @@
         </div>
       
       <div class="col-lg-9">
+          <!-- error message  -->
+          @if ($errors->any())
+
+              @foreach ($errors->all() as $error)
+                  <div class="alert alert-danger alert-dismissible">
+                      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+                      {{ $error }}
+                  </div>
+          @endforeach
+
+
+      @endif
+      <!-- end message -->
          <div class="card">
                 <div class="card-body">
                   <div class="container post_create">
@@ -26,9 +40,10 @@
 
                       <div class="">
 
-                        <form class="" action="#" method="post">
+                        <form class="" action="{{route('dashboard.terms.submit')}}" method="post">
+                            @csrf
                           <div class="form-group mt-3">
-                            <textarea class="form-control summernote" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea name="terms" class="form-control summernote" id="exampleFormControlTextarea1" rows="3"></textarea>
                           </div>
 
                           <button type="submit" class="btn btn-success btn-block mb-2">Save</button>

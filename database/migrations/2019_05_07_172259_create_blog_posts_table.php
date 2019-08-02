@@ -22,6 +22,7 @@ class CreateBlogPostsTable extends Migration
             $table->longText('content');
             $table->integer('category_id');
             $table->integer('sub_category_id');
+            $table->boolean('featured_post')->default(0);
             $table->string('image');
             $table->string('image_caption', 160)->nullable();
             $table->timestamps();

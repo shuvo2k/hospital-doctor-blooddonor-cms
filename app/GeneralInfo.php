@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GeneralInformation extends Model
+class GeneralInfo extends Model
 {
     public function detail(){
         return $this->belongsTo('App\Detail');

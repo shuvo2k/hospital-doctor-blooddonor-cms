@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +13,7 @@
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="home.css">
-    
+   
 
 
 </head>
@@ -325,7 +327,9 @@
   </nav>
 
 
+
   
+
 <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
     <i class="fas fa-bars"></i>
   </a>
@@ -337,7 +341,6 @@
   <main class="page-content">
 
     <div class="container-fluid">
-
 
 <div class="row">
         <div>
@@ -352,6 +355,8 @@
       </div>
         
   </div>
+
+      
       
     </div>
 

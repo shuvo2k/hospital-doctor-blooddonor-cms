@@ -12,6 +12,7 @@ $factory->define(Schedule::class, function (Faker $faker) {
         'detail_id' => Detail::all()->random()->id,
         'slug' => 'detail'.'/'.Detail::all()->random()->id.'/'.$faker->company,
         'role' => 'hospitalstuff',
+        'type' => 'org',
         'doctor_name' => $faker->name,
         'education_details' => $faker->colorName,
         'org_name' => $faker->company,

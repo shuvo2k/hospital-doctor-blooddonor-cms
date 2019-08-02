@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('title')
 
@@ -90,8 +90,3 @@
 
 @push('js')
 @endpush
-
-
-
-
-

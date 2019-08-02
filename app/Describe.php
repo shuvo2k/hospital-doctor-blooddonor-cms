@@ -3,11 +3,10 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Detail;
 
-class Description extends Model
+class Describe extends Model
 {
-    public function detail(){
+    public function describ(){
         return $this->belongsTo('App\Detail');
     }
 }

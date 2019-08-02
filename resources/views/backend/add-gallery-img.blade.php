@@ -27,14 +27,15 @@
 
                       <div class="container add_option">
 
-                        <form class="" action="#" method="post">
+                        <form class="" action="{{route('dashboard.gallery.submit')}}" method="post" enctype="multipart/form-data">
+                            @csrf
                           <div class="form-group">
                             <label for="exampleFormControlFile1">Choose file</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
                           </div>
                           <div class="form-group" >
                             <label for="exampleFormControlInput1">Add Image Title</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Image Title">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Image Title" name="image_title">
                           </div>
                           <button type="submit" class="btn btn-success btn-block mb-2">Post</button>
                         </form>
