@@ -7,7 +7,7 @@
   @section('content')
 
   <div class="container emp-profile">
-    <form method="post">
+
       <div class="row">
         <div class="col-md-4">
           <div class="profile-img">
@@ -31,6 +31,33 @@
           {{ $user->area }}
           @endif
             </h6>
+            <!-- error message  -->
+            @if ($errors->any())
+
+              @foreach ($errors->all() as $error)
+                <div class="alert alert-danger alert-dismissible">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+                  {{ $error }}
+                </div>
+              @endforeach
+
+
+            @endif
+            <!-- session message -->
+            @if (session()->has('error'))
+              <div class="alert alert-danger alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ session('error') }}
+              </div>
+            @endif
+            <!-- session message -->
+            @if (session()->has('success'))
+              <div class="alert alert-success alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ session('success') }}
+              </div>
+            @endif
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
@@ -50,6 +77,7 @@
 
         </div>
         <div class="col-md-8">
+
           <div class="tab-content profile-tab" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
@@ -113,8 +141,11 @@
 
 
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
               <div class="form-area">
-                <form role="form">
+                <form role="form" action="{{ route('donor.send.message') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="user_id" value="{{ $user->id }}">
                   <br style="clear:both">
                   <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
                   <div class="form-group">
@@ -124,16 +155,16 @@
                     <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                    <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                    <textarea class="form-control" name="message" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
                   </div>
 
-                  <button type="button" id="submit" name="submit" class="btn btn-primary pull-right ml-1">Submit Form</button>
+                  <button type="submit" id="submit" class="btn btn-primary pull-right ml-1">Submit Form</button>
                 </form>
               </div>
             </div>
@@ -142,7 +173,7 @@
           </div>
         </div>
       </div>
-    </form>
+
   </div>
 
 

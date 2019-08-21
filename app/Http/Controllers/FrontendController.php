@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Category;
 use App\Detail;
+use App\DonorMessage;
 
 class FrontendController extends Controller
 {
@@ -223,6 +224,29 @@ public function signout(Request $request){
     public function donorProfile($id){
       $user = User::find($id);
       return view('blood.blood-profile', compact('user'));
+    }
+
+    public function sendMessageToDonor(Request $request){
+      $request->validate([
+          'name' => 'required',
+          'email' => 'required',
+          'mobile' => 'required',
+          'subject' => 'required',
+          'message' => 'required',
+      ]);
+
+      $message = new DonorMessage();
+      $message->user_id = $request->user_id;
+      $message->name = $request->name;
+      $message->email = $request->email;
+      $message->mobile_no = $request->mobile;
+      $message->subject = $request->subject;
+      $message->message = $request->message;
+
+      $message->save();
+      session()->flash('success', 'Message Send Successfull.');
+      return redirect()->route('donor.profile', $request->user_id);
+
     }
     /*=============================end blood donor section==========================*/
 

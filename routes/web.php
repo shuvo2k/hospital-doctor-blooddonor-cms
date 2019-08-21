@@ -136,9 +136,11 @@ Route::group(['as' => 'dashboard.' ,'prefix' => 'dashboard', 'middleware' => ['h
 
 
 Route::get('donor/profile/{id}', 'FrontendController@donorProfile')->name('donor.profile');
-
+Route::post('/send/message/donor', 'FrontendController@sendMessageToDonor')->name('donor.send.message');
 
 Route::group(['as' => 'donor.' ,'prefix' => 'donor', 'middleware' => ['blooddonor_middleware']], function () {
 Route::get('/', 'DonorController@index')->name('index');
 Route::post('/profile/update', 'DonorController@profileUpdate')->name('profile.update');
+Route::get('/create/message', 'DonorController@createMessage')->name('create.message');
+Route::post('/send/blood/request', 'DonorController@postBloodRequest')->name('post.blood.message');
 });

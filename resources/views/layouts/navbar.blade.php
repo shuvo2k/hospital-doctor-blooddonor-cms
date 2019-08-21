@@ -15,7 +15,7 @@
                 <a class="nav-link" href="messagess.html">Message</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="create-messagess.html">Create Message</a>
+                <a class="nav-link" href="{{ route('donor.create.message') }}">Create Message</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blood-profile.html">Profile</a>

@@ -87,6 +87,7 @@
                     <!--setting form start-->
                     <form class="form container" action="{{ route('donor.profile.update') }}" method="post" id="registrationForm" enctype="multipart/form-data">
                       @csrf
+                    
                       <div class="form-group row">
 
                         <div class="col-xs-6 col-md-6 col-lg-6">

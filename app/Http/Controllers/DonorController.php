@@ -68,4 +68,19 @@ class DonorController extends Controller
       $user->save();
       return redirect()->route('donor.index');
     }
+
+
+
+    //create blood need message
+    public function createMessage(){
+      $user = User::where('email', session('user_email'))->first();
+      $country = Country::all();
+      $city = City::all();
+      $state = State::all();
+      return view('blood.create-messagess', compact('user', 'country', 'city','state'));
+    }
+
+    public function postBloodRequest(Request $request){
+      
+    }
 }
